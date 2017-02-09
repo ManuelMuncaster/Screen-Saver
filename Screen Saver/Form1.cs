@@ -55,7 +55,7 @@ namespace Screen_Saver
                 //move all the balls
             for(int i = 0; i < ballxSpeed.Count(); i++)
             {
-                ballRectangle[i] = new Rectangle (ballRectangle[i].X + ballxSpeed[i], ballRectangle[i].X + ballySpeed[i], 25, 25);
+                ballRectangle[i] = new Rectangle (ballRectangle[i].X + ballxSpeed[i], ballRectangle[i].Y + ballySpeed[i], 25, 25);
             }
 
             //check for collision
@@ -76,7 +76,7 @@ namespace Screen_Saver
                     ballySpeed[i] = 5;
                 }
 
-                else if (ballRectangle[i].X > this.Width - 25)
+                else if (ballRectangle[i].Y > this.Width - 25)
                 {
                     ballySpeed[i] = -5;
                 }
