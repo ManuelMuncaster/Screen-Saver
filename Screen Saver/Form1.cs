@@ -61,7 +61,7 @@ namespace Screen_Saver
             //check for collision
             for (int i = 0; i < ballxSpeed.Count(); i++)
             {
-                if (ballRectangle[i].X < 0)
+                if (ballRectangle[i].X < 0 || )
                 {
                     ballxSpeed[i] = 5;
                 }
